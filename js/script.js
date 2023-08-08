@@ -5,7 +5,7 @@ const searchMobile =() => {
   // console.log(searchText);
   
   searchMobileDetails(searchText);
-  // clear data 
+  // clear data
   document.getElementById('search-field').value='';
 }
 
@@ -17,7 +17,7 @@ const searchMobileDetails =(searchText)=>{
    .then(res =>  res.json())
    .then(data => displayMobile(data.data));
 }
-// searchMobileDetails("Apple");
+searchMobileDetails("Apple");
 const displayMobile = (mobile)=>{
   // console.log(mobile);
   
